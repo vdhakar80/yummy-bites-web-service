@@ -3,6 +3,8 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
 const authentication = {};
+const saltRounds = 10;
+
 authentication.generateToken = (user) => {
   const payload = {
     id: user._id,
@@ -31,4 +33,9 @@ authentication.comparePasswords = async (password, hashedPassword) => {
   return isValidPassword;
 };
 
+authentication.encryptPassword = async (password) => {
+  const salt = await bcrypt.genSalt(saltRounds);
+  const hashedPassword = await bcrypt.hash(password, salt);
+  return hashedPassword;
+};
 module.exports = authentication;

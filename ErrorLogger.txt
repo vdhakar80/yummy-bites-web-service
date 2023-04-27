@@ -130,3 +130,64 @@ Error: Requested user is not registered
     at userService.findUserByEmailId (D:\new study material\yummy-bites-web-service\src\services\userService.js:9:15)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:12:18
+Error: Requested user is not registered
+    at userService.findUserByEmailId (D:\new study material\yummy-bites-web-service\src\services\userService.js:9:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:12:18
+Error: Requested user is not registered
+    at userService.findUserByEmailId (D:\new study material\yummy-bites-web-service\src\services\userService.js:9:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:12:18
+ValidationError: User validation failed: password: 454 is not a valid Password!
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:2901:17
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+ValidationError: User validation failed: password: 43 is not a valid Password!
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:2901:17
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+Error: User Already exist
+    at userService.registerUser (D:\new study material\yummy-bites-web-service\src\services\userService.js:25:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:26:18
+ValidationError: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password"
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at model.$set (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:1430:12)
+    at model.$set (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:1113:16)
+    at model.Document (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:163:12)
+    at model.Model (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\model.js:121:12)
+    at new model (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\model.js:4543:15)
+    at registerUser (D:\new study material\yummy-bites-web-service\src\models\userModal.js:21:17)
+    at userService.registerUser (D:\new study material\yummy-bites-web-service\src\services\userService.js:29:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:26:18
+Error: User Already exist
+    at userService.registerUser (D:\new study material\yummy-bites-web-service\src\services\userService.js:25:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:26:18
+Error: User Already exist
+    at userService.registerUser (D:\new study material\yummy-bites-web-service\src\services\userService.js:25:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:26:18
+Error: User Already exist
+    at userService.registerUser (D:\new study material\yummy-bites-web-service\src\services\userService.js:25:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:26:18
+Error: User Already exist
+    at userService.registerUser (D:\new study material\yummy-bites-web-service\src\services\userService.js:25:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:26:18
+Error: User Already exist
+    at userService.registerUser (D:\new study material\yummy-bites-web-service\src\services\userService.js:25:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:26:18
+Error: User Already exist
+    at userService.registerUser (D:\new study material\yummy-bites-web-service\src\services\userService.js:25:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:26:18
+Error: User Already exist
+    at userService.registerUser (D:\new study material\yummy-bites-web-service\src\services\userService.js:25:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:26:18

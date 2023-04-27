@@ -4,6 +4,7 @@ const router = express.Router();
 const bcrypt = require("bcrypt");
 const { getUser } = require("../models/userModal");
 const { findUserByEmailId, registerUser } = require("../services/userService");
+const { encryptPassword } = require("../utilities/authentication");
 
 router.post("/login", async (req, res, next) => {
   try {
@@ -21,6 +22,7 @@ router.post("/login", async (req, res, next) => {
 router.post("/register", async (req, res, next) => {
   try {
     const user = req.body;
+    user.password = await encryptPassword(user.password);
     const data = await registerUser(user);
     res.send(data);
   } catch (err) {
@@ -28,7 +30,7 @@ router.post("/register", async (req, res, next) => {
   }
 });
 
-// router.get("/login", async (req, res) => {
+// router.get("/lon", async (req, res) => {
 //   const { email, password } = req.body;
 //   const user = { name: "Vicky", email: "vick@gmail.com", password: "1234" };
 //   if (!user) {

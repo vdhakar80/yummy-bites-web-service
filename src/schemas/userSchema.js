@@ -23,14 +23,14 @@ const userSchema = Schema(
     password: {
       type: String,
       required: true,
-      validate: {
-        validator: function (v) {
-          return /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*~-]).{8,}$/.test(
-            v
-          );
-        },
-        message: (props) => `${props.value} is not a valid Password!`,
-      },
+      // validate: {
+      //   validator: function (v) {
+      //     return /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*~-]).{8,}$/.test(
+      //       v
+      //     );
+      //   },
+      //   message: (props) => `${props.value} is not a valid Password!`,
+      // },
     },
     orders: [String],
     profilePicture: String,
