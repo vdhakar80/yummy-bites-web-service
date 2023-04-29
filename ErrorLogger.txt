@@ -191,3 +191,162 @@ Error: User Already exist
     at userService.registerUser (D:\new study material\yummy-bites-web-service\src\services\userService.js:25:15)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
     at async D:\new study material\yummy-bites-web-service\src\routes\userRouter.js:26:18
+ValidationError: Items validation failed: type: Path `type` is required., Description: Path `Description` is required., price: Path `price` is required., name: Path `name` is required., image: Path `image` is required.
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:2901:17
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+MongoServerError: E11000 duplicate key error collection: yummyBites.items index: type_1 dup key: { type: "paratha" }
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\new study material\yummy-bites-web-service\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\new study material\yummy-bites-web-service\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (D:\new study material\yummy-bites-web-service\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (D:\new study material\yummy-bites-web-service\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (D:\new study material\yummy-bites-web-service\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+TypeError: Cannot read properties of undefined (reading 'filename')
+    at D:\new study material\yummy-bites-web-service\src\app.js:40:45
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at multerMiddleware (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:13:41)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:346:12)
+TypeError: Cannot read properties of undefined (reading 'filename')
+    at D:\new study material\yummy-bites-web-service\src\app.js:40:45
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:513:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+TypeError: Cannot read properties of undefined (reading 'filename')
+    at D:\new study material\yummy-bites-web-service\src\app.js:40:45
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:513:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+TypeError: Cannot read properties of undefined (reading 'filename')
+    at D:\new study material\yummy-bites-web-service\src\app.js:40:45
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at multerMiddleware (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:13:41)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:346:12)
+TypeError: Cannot read properties of undefined (reading 'filename')
+    at D:\new study material\yummy-bites-web-service\src\app.js:40:45
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at multerMiddleware (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:13:41)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:346:12)
+Error: ENOENT: no such file or directory, open 'D:\new study material\yummy-bites-web-service\public\uploads\image-1682775396829.PNG'
+TypeError: Cannot read properties of undefined (reading 'mimetype')
+    at D:\new study material\yummy-bites-web-service\src\app.js:39:27
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:513:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+ValidationError: Items validation failed: type: Path `type` is required., Description: Path `Description` is required., price: Path `price` is required., name: Path `name` is required., image: Path `image` is required.
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:2901:17
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+ValidationError: Items validation failed: type: Path `type` is required., Description: Path `Description` is required., price: Path `price` is required., name: Path `name` is required., image: Path `image` is required.
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:2901:17
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+ValidationError: Items validation failed: type: Path `type` is required., Description: Path `Description` is required., price: Path `price` is required., name: Path `name` is required., image: Path `image` is required.
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:2901:17
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+ValidationError: Items validation failed: type: Path `type` is required., Description: Path `Description` is required., price: Path `price` is required., name: Path `name` is required., image: Path `image` is required.
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:2901:17
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+ValidationError: Items validation failed: type: Path `type` is required., Description: Path `Description` is required., price: Path `price` is required., name: Path `name` is required., image: Path `image` is required.
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:2901:17
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+ValidationError: Items validation failed: image: Cast to string failed for value "{
+  contentType: 'image/png',
+  data: {
+    type: 'Buffer',
+    data: [
+      137,  80,  78,  71, 13,  10,  26,  10,   0,   0,   0,  13,
+       73,  72,  68,  82,  0,   0,   2, 163,   0,   0,   0, 205,
+        8,   6,   0,   0,  0, 140, 254, 121, 107,   0,   0,   0,
+        1, 115,  82,  71, 66,   0, 174, 206,  28, 233,   0,   0,
+        0,   4, 103,  65, 77,  65,   0,   0, 177, 143,  11, 252,
+       97,   5,   0,   0,  0,   9, 112,  72,  89, 115,   0,   0,
+       18, 116,   0,   0, 18, 116,   1, 222, 102,  31, 120,   0,
+        0,  64, 174,  73, 68,  65,  84, 120,  94, 237, 189,   7,
+      119,  20,  87, 162,
+      ... 16565 more items
+    ]
+  }
+}" (type Object) at path "image", Description: Path `Description` is required.
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at model.$set (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:1430:12)
+    at model.$set (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:1113:16)
+    at model.Document (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:163:12)
+    at model.Model (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\model.js:121:12)
+    at new model (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\model.js:4543:15)
+    at itemsDb.setItem (D:\new study material\yummy-bites-web-service\src\models\itemsModal.js:23:19)
+    at setItemService (D:\new study material\yummy-bites-web-service\src\services\itemsService.js:26:22)
+    at D:\new study material\yummy-bites-web-service\src\routes\itemsRouter.js:32:24
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+ValidationError: Items validation failed: Description: Path `Description` is required.
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:2901:17
+    at D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+PayloadTooLargeError: request entity too large
+    at readStream (D:\new study material\yummy-bites-web-service\node_modules\raw-body\index.js:163:17)
+    at getRawBody (D:\new study material\yummy-bites-web-service\node_modules\raw-body\index.js:116:12)
+    at read (D:\new study material\yummy-bites-web-service\node_modules\body-parser\lib\read.js:79:3)
+    at jsonParser (D:\new study material\yummy-bites-web-service\node_modules\body-parser\lib\types\json.js:138:5)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:328:13)
+    at D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:280:10)
+    at cors (D:\new study material\yummy-bites-web-service\node_modules\cors\lib\index.js:188:7)
+TypeError: Cannot read properties of undefined (reading 'mimetype')
+    at D:\new study material\yummy-bites-web-service\src\app.js:39:27
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at done (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:45:7)
+    at indicateDone (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:49:68)
+    at Multipart.<anonymous> (D:\new study material\yummy-bites-web-service\node_modules\multer\lib\make-middleware.js:166:7)
+    at Multipart.emit (node:events:513:28)
+    at emitCloseNT (node:internal/streams/destroy:132:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
