@@ -350,3 +350,75 @@ TypeError: Cannot read properties of undefined (reading 'mimetype')
     at Multipart.emit (node:events:513:28)
     at emitCloseNT (node:internal/streams/destroy:132:10)
     at process.processTicksAndRejections (node:internal/process/task_queues:81:21)
+PayloadTooLargeError: request entity too large
+    at readStream (D:\new study material\yummy-bites-web-service\node_modules\raw-body\index.js:163:17)
+    at getRawBody (D:\new study material\yummy-bites-web-service\node_modules\raw-body\index.js:116:12)
+    at read (D:\new study material\yummy-bites-web-service\node_modules\body-parser\lib\read.js:79:3)
+    at jsonParser (D:\new study material\yummy-bites-web-service\node_modules\body-parser\lib\types\json.js:138:5)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:328:13)
+    at D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:280:10)
+    at cors (D:\new study material\yummy-bites-web-service\node_modules\cors\lib\index.js:188:7)
+PayloadTooLargeError: request entity too large
+    at readStream (D:\new study material\yummy-bites-web-service\node_modules\raw-body\index.js:163:17)
+    at getRawBody (D:\new study material\yummy-bites-web-service\node_modules\raw-body\index.js:116:12)
+    at read (D:\new study material\yummy-bites-web-service\node_modules\body-parser\lib\read.js:79:3)
+    at jsonParser (D:\new study material\yummy-bites-web-service\node_modules\body-parser\lib\types\json.js:138:5)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:328:13)
+    at D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:280:10)
+    at cors (D:\new study material\yummy-bites-web-service\node_modules\cors\lib\index.js:188:7)
+ReferenceError: body is not defined
+    at D:\new study material\yummy-bites-web-service\src\routes\itemsRouter.js:35:39
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:175:3)
+    at router (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:47:12)
+PayloadTooLargeError: request entity too large
+    at readStream (D:\new study material\yummy-bites-web-service\node_modules\raw-body\index.js:163:17)
+    at getRawBody (D:\new study material\yummy-bites-web-service\node_modules\raw-body\index.js:116:12)
+    at read (D:\new study material\yummy-bites-web-service\node_modules\body-parser\lib\read.js:79:3)
+    at jsonParser (D:\new study material\yummy-bites-web-service\node_modules\body-parser\lib\types\json.js:138:5)
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:328:13)
+    at D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\index.js:280:10)
+    at cors (D:\new study material\yummy-bites-web-service\node_modules\cors\lib\index.js:188:7)
+ValidationError: Items validation failed: image: Cast to string failed for value "{
+  contentType: 'image/jpeg',
+  data: {
+    type: 'Buffer',
+    data: [
+      255, 216, 255, 224,  0,  16,  74, 70,  73,  70,  0,  1,
+        1,   0,   0,   1,  0,   1,   0,  0, 255, 219,  0, 67,
+        0,   3,   2,   2,  3,   2,   2,  3,   3,   3,  3,  4,
+        3,   3,   4,   5,  8,   5,   5,  4,   4,   5, 10,  7,
+        7,   6,   8,  12, 10,  12,  12, 11,  10,  11, 11, 13,
+       14,  18,  16,  13, 14,  17,  14, 11,  11,  16, 22, 16,
+       17,  19,  20,  21, 21,  21,  12, 15,  23,  24, 22, 20,
+       24,  18,  20,  21, 20, 255, 219,  0,  67,   1,  3,  4,
+        4,   5,   4,   5,
+      ... 110839 more items
+    ]
+  }
+}" (type Object) at path "image"
+    at Document.invalidate (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:3108:32)
+    at model.$set (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:1430:12)
+    at model.$set (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:1113:16)
+    at model.Document (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\document.js:163:12)
+    at model.Model (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\model.js:121:12)
+    at new model (D:\new study material\yummy-bites-web-service\node_modules\mongoose\lib\model.js:4543:15)
+    at itemsDb.setItem (D:\new study material\yummy-bites-web-service\src\models\itemsModal.js:23:19)
+    at setItemService (D:\new study material\yummy-bites-web-service\src\services\itemsService.js:26:22)
+    at D:\new study material\yummy-bites-web-service\src\routes\itemsRouter.js:35:24
+    at Layer.handle [as handle_request] (D:\new study material\yummy-bites-web-service\node_modules\express\lib\router\layer.js:95:5)

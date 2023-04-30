@@ -14,7 +14,7 @@ router.post("/upload", upload.single("image"), (req, res, next) => {
   };
   const img = new Buffer(image.data, "binary").toString("base64");
   const imageUrl = "data:" + image.contentType + ";base64," + img;
-  res.json({ imageUrl: image, temp: imageUrl });
+  res.json({ imageBuffer: image, imageUrl: imageUrl });
 });
 
 module.exports = router;

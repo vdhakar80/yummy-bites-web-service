@@ -11,9 +11,9 @@ const multer = require("multer");
 const { Buffer } = require("node:buffer");
 app.use(cors());
 // parse application/json
-app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: "50mb" }));
 // parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ limit: "50mb", extended: true }));
 
 app.use("/user", userRouter);
 app.use("/items", itemsRouter);

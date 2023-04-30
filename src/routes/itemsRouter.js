@@ -26,9 +26,7 @@ router.get("/:itemType", async (req, res, next) => {
 });
 router.post("/", async (req, res, next) => {
   try {
-    console.log("Vicky", req.body);
-    const body = req.body;
-    const data = await setItemService(body);
+    const data = await setItemService(req.body);
     res.send(data);
   } catch (err) {
     next(err);
