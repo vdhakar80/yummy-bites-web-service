@@ -15,19 +15,19 @@ itemsDb.getItems = async (type) => {
     ele._id = ele._id.toString();
     return ele;
   });
-  console.log(response);
+  // console.log(response);
   return response;
 };
 itemsDb.setItem = async (item) => {
-  console.log("item", item);
+  // console.log("item", item);
   const newItem = new itemsModal(item);
   const res = await newItem.save();
-  console.log("asdf", res);
+  // console.log("asdf", res);
   return res;
 };
 itemsDb.setMultipleItems = (item) => {
   const res = itemsModal.insertMany(items);
-  console.log("asdf", res);
+  // console.log("asdf", res);
   return res;
 };
 

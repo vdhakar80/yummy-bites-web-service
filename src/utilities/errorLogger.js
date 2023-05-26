@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const errorLogger = (err, req, res, next) => {
-  console.log("inside error logger");
+  // console.log("inside error logger");
   fs.appendFile("./ErrorLogger.txt", err.stack + "\n", (error) => {
     if (error) console.log("logging error failed");
   });

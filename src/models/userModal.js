@@ -33,7 +33,7 @@ const updateUser = (user) => {
   userModal
     .updateOne({ emailId: user.emailId }, { $set: user })
     .then((user) => {
-      console.log(user);
+      // console.log(user);
       return user;
     });
 };

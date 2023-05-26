@@ -19,7 +19,7 @@ userService.findUserByEmailId = async (email, password) => {
 };
 
 userService.registerUser = async (user) => {
-  console.log("inside service");
+  // console.log("inside service");
   const userData = await getUserByEmail(user.emailId);
   if (userData) {
     let err = new Error("User Already exist");
